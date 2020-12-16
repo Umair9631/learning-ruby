@@ -1,0 +1,44 @@
+ puts "Plese Enter FIrst Number";
+first_number= gets.chomp.to_i;
+
+puts "Plese Enter Second Number";
+second_number= gets.chomp.to_i;
+
+puts (first_number + second_number)
+puts (first_number - second_number)
+puts (first_number * second_number)
+puts (first_number / second_number)
+
+
+
+puts "Plese Enter a Number";
+number = gets.chomp.to_i;
+
+(1..10).each do |i|
+   puts "#{number} * #{i} = #{number*i}"
+end
+
+
+
+puts "Enter First Number"
+a=gets.chomp.to_f
+puts "Enter Second Number"
+b=gets.chomp.to_f
+puts "Enter oprator"
+c=gets.chomp
+
+def cal(number1, number2, operator)
+    if operator == "+"
+        return number1+number2
+    elsif operator == "-"
+        return number1-number2
+    elsif operator == "*"
+        return number1*number2
+    elsif operator == "*"
+        return number1/number2
+    else
+        return "Incorrect Oprator"
+    end
+ end
+print "Your answer is :"
+puts cal(a,b,c);
